@@ -22,7 +22,7 @@ uri = os.getenv("DEV_MONGODB_URI")
 database = os.getenv("DEV_MONGODB_DB")
 
 app = Flask(__name__)
-app.config.from_object(config.LocalConfig)
+app.config.from_object(config.Config)
 
 Session(app)
 
