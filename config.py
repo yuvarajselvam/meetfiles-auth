@@ -1,10 +1,8 @@
 from os import path, getenv
-from dotenv import load_dotenv
 
 from pymongo import MongoClient
 
 basedir = path.abspath(path.dirname(__file__))
-load_dotenv(path.join(basedir, '.env'))
 
 
 class Config:
